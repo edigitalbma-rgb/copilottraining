@@ -28,7 +28,7 @@ export default function LessonContent({ lesson, completed, onMarkComplete }) {
 
       {!lesson.url && (
         <p className="text-sm text-slate-400 italic">
-          This is a facilitator-led session — there is no source module link for this lesson.
+          This is a facilitator-led session; there is no source module link for this lesson.
         </p>
       )}
 

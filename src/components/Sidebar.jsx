@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { curriculum, appendixItems } from '../data/curriculum'
 import { useProgress } from '../context/ProgressContext'
 
@@ -25,10 +25,14 @@ export default function Sidebar({ isOpen, onClose }) {
           isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
         }`}
       >
-        <div className="px-5 pt-6 pb-4 border-b border-white/10">
+        <Link
+          to="/"
+          onClick={onClose}
+          className="block px-5 pt-6 pb-4 border-b border-white/10 hover:bg-white/5 transition-colors"
+        >
           <p className="text-xs font-semibold uppercase tracking-wider text-ice">Curriculum</p>
           <h1 className="mt-1 text-lg font-bold leading-tight">Copilot for Non-Technical Users</h1>
-        </div>
+        </Link>
 
         <nav className="px-3 py-4 space-y-5">
           {curriculum.map((phase) => (
@@ -79,7 +83,7 @@ export default function Sidebar({ isOpen, onClose }) {
 
           <div>
             <p className="px-2 mb-1.5 text-xs font-semibold uppercase tracking-wider text-ice/80">
-              Appendix — Advanced Topics, awareness only
+              Appendix: Advanced Topics, awareness only
             </p>
             <NavLink
               to="/appendix"

@@ -1,15 +1,15 @@
 // ---------------------------------------------------------------------------
 // Central curriculum data file.
 //
-// Everything the app renders — phases, lessons, reference tables,
-// checkpoints, welcome/completion copy, and the appendix — lives here.
+// Everything the app renders (phases, lessons, reference tables,
+// checkpoints, welcome/completion copy, and the appendix) lives here.
 // Components read from this file; they never hardcode lesson content.
 //
 // Lesson "type" values:
-//   'lesson'     — a normal module: format badge, time, why-it-matters copy,
+//   'lesson'     - a normal module: format badge, time, why-it-matters copy,
 //                  a link to the source module, and a Mark Complete gate.
-//   'reference'  — a read-only in-page table (no completion gate).
-//   'checkpoint' — a reflection question with a saved free-text answer
+//   'reference'  - a read-only in-page table (no completion gate).
+//   'checkpoint' - a reflection question with a saved free-text answer
 //                  (Continue unlocks once something has been typed).
 //
 // Each phase's `lessons` array is already in the order learners move
@@ -20,7 +20,7 @@ export const welcomeContent = {
   title: 'Copilot for Non-Technical Users',
   subtitle: 'A Guided Curriculum for Deep, Practical Understanding',
   intro:
-    "This course turns the Microsoft Copilot Agents Labs module library into a guided, sequenced learning path for people with no coding background. You'll move phase by phase — building a real mental model of what an agent is, what it can do, and which tool to reach for — before ever touching the more technical material.",
+    "This course turns the Microsoft Copilot Agents Labs module library into a guided, sequenced learning path for people with no coding background. You'll move phase by phase, building a real mental model of what an agent is, what it can do, and which tool to reach for, before ever touching the more technical material.",
   cta: 'Start Course',
   about: {
     heading: 'Who This Is For & How to Use It',
@@ -31,15 +31,15 @@ export const welcomeContent = {
       },
       {
         label: 'Goal',
-        text: "Not just clicking through labs, but building an accurate mental model — what an agent is, what it can and can't do, and which tool to reach for.",
+        text: "Not just clicking through labs, but building an accurate mental model: what an agent is, what it can and can't do, and which tool to reach for.",
       },
       {
         label: 'Format',
-        text: 'Seven phases, designed for roughly one phase per week at 1–2 hours/week, self-paced. Each phase lists the source module, its format, estimated time, and — in plain language — why it matters.',
+        text: 'Seven phases, designed for roughly one phase per week at 1–2 hours/week, self-paced. Each phase lists the source module, its format, estimated time, and, in plain language, why it matters.',
       },
     ],
     checkpointPolicy:
-      'Every phase ends with a short "Checkpoint" — questions to answer in your own words before moving on. If you can\'t answer them, re-watch the module before continuing.',
+      'Every phase ends with a short "Checkpoint": questions to answer in your own words before moving on. If you can\'t answer them, re-watch the module before continuing.',
     appendixNote:
       'An appendix lists the remaining, more technical modules from the library for awareness only; they are IT/developer territory and are not required to use Copilot effectively.',
   },
@@ -70,7 +70,7 @@ export const curriculum = [
         format: 'Discussion + demo (facilitator-led)',
         time: '30 min',
         oneLiner:
-          'Sets shared vocabulary — Copilot Chat vs. an agent vs. Copilot Studio — and where each fits inside Microsoft 365, so every later lesson makes sense on first viewing.',
+          'Sets shared vocabulary (Copilot Chat vs. an agent vs. Copilot Studio) and where each fits inside Microsoft 365, so every later lesson makes sense on first viewing.',
         why:
           "Before you build anything, you need a clear map of the Copilot landscape. Microsoft 365 today includes several related-but-different things that all get called ‘Copilot’: the everyday chat assistant built into Word, Excel, and Teams; ready-made ‘agents’ that specialize in a task; and Copilot Studio, the tool used to build custom agents from scratch. This lesson walks through each of those pieces side by side, in plain language, so you can tell them apart and know which one a coworker is talking about. Getting this vocabulary straight now means every lesson that follows will click into place immediately, instead of leaving you guessing what term means what.",
         url: null,
@@ -97,7 +97,7 @@ export const curriculum = [
         format: 'Slides',
         time: '30 min',
         oneLiner:
-          'A guided tour of agents, topics, knowledge, tools, variables, and channels — the vocabulary for everything else in this course.',
+          'A guided tour of agents, topics, knowledge, tools, variables, and channels: the vocabulary for everything else in this course.',
         why:
           "Every course needs a foundation, and this lesson is it. You'll get a guided tour of the six building blocks that make up any Copilot Studio agent: the agent itself, topics (conversation paths), knowledge (what it can read), tools (what it can do), variables (what it remembers), and channels (where people can reach it). Rather than memorizing definitions, you'll see how these pieces fit together to create a working assistant. Understanding this vocabulary now means you'll recognize these same six concepts resurfacing in every lab for the rest of the course.",
         url: 'https://microsoft.github.io/mcs-labs/modules/copilot-studio-core-concepts-overview/',
@@ -109,9 +109,9 @@ export const curriculum = [
         format: 'Slides + Lab',
         time: '30 min',
         oneLiner:
-          'Introduces the simplest way to build an AI assistant, directly inside Microsoft 365 — no separate tool to learn.',
+          'Introduces the simplest way to build an AI assistant, directly inside Microsoft 365: no separate tool to learn.',
         why:
-          "Agent Builder is the lowest-friction way to create your first AI assistant, because it lives right inside the Microsoft 365 apps you already use — no new login, no separate platform to learn. This lesson shows you how a business user, with zero coding background, can describe what they want an assistant to do and have it built in minutes. It's designed to prove a point early in the course: building a working agent is far more approachable than most people expect. Everything else in the curriculum builds on the confidence you'll gain here.",
+          "Agent Builder is the lowest-friction way to create your first AI assistant, because it lives right inside the Microsoft 365 apps you already use: no new login, no separate platform to learn. This lesson shows you how a business user, with zero coding background, can describe what they want an assistant to do and have it built in minutes. It's designed to prove a point early in the course: building a working agent is far more approachable than most people expect. Everything else in the curriculum builds on the confidence you'll gain here.",
         url: 'https://microsoft.github.io/mcs-labs/modules/agent-builder/',
       },
       {
@@ -133,7 +133,7 @@ export const curriculum = [
         time: '15 min',
         oneLiner: 'The simplified, low-friction entry point into Copilot Studio itself.',
         why:
-          "Copilot Studio Lite strips away the more advanced options and gives you a simplified on-ramp into the full Copilot Studio platform. This lesson uses that simplified view to bridge the gap between the very basic Agent Builder you just tried and the more capable tool you'll use for the rest of the course. It's a deliberately gentle introduction — you'll recognize the same building blocks from Lesson 1, just with a slightly bigger toolset. By the end, Copilot Studio will feel like a natural next step rather than an intimidating new platform.",
+          "Copilot Studio Lite strips away the more advanced options and gives you a simplified on-ramp into the full Copilot Studio platform. This lesson uses that simplified view to bridge the gap between the very basic Agent Builder you just tried and the more capable tool you'll use for the rest of the course. It's a deliberately gentle introduction; you'll recognize the same building blocks from Lesson 1, just with a slightly bigger toolset. By the end, Copilot Studio will feel like a natural next step rather than an intimidating new platform.",
         url: 'https://microsoft.github.io/mcs-labs/modules/copilot-studio-lite/',
       },
       {
@@ -171,7 +171,7 @@ export const curriculum = [
         time: '20 min',
         oneLiner: "Practice building an agent grounded in your team's own SharePoint documents.",
         why:
-          "This lab takes the theory from the last lesson and applies it directly: you'll connect an agent to real documents your team already stores in SharePoint. Grounding an agent in your own content is what separates a generic chatbot from something genuinely useful — the agent's answers become specific to your team's policies, processes, and history instead of generic guesses. This is also your first taste of ‘knowledge’ as a working feature rather than a concept. By the end, you'll have built something you could realistically hand to a colleague and have them use.",
+          "This lab takes the theory from the last lesson and applies it directly: you'll connect an agent to real documents your team already stores in SharePoint. Grounding an agent in your own content is what separates a generic chatbot from something genuinely useful: the agent's answers become specific to your team's policies, processes, and history instead of generic guesses. This is also your first taste of ‘knowledge’ as a working feature rather than a concept. By the end, you'll have built something you could realistically hand to a colleague and have them use.",
         url: 'https://microsoft.github.io/mcs-labs/modules/agent-builder-sharepoint/',
       },
       {
@@ -182,7 +182,7 @@ export const curriculum = [
         time: '20 min',
         oneLiner: 'Build an agent that preps a recurring business review from SharePoint data.',
         why:
-          "Recurring reporting tasks are one of the best places to apply an agent, because the work repeats in a predictable pattern every month. In this lab, you'll build an agent that pulls from SharePoint data to help prep a Monthly Business Review — the kind of task that normally eats up hours of manual compiling. This shows how the same knowledge-grounding skill from the last lesson scales up to a real, recurring business process. Think of this as a template you can adapt for any repeating report your own team produces.",
+          "Recurring reporting tasks are one of the best places to apply an agent, because the work repeats in a predictable pattern every month. In this lab, you'll build an agent that pulls from SharePoint data to help prep a Monthly Business Review, the kind of task that normally eats up hours of manual compiling. This shows how the same knowledge-grounding skill from the last lesson scales up to a real, recurring business process. Think of this as a template you can adapt for any repeating report your own team produces.",
         url: 'https://microsoft.github.io/mcs-labs/modules/mbr-prep-sharepoint-agent/',
       },
       {
@@ -193,7 +193,7 @@ export const curriculum = [
         time: '40 min',
         oneLiner: 'Build an employee-facing Q&A agent end to end.',
         why:
-          "This lab pulls everything from Phase 2 together into one complete build: an employee-facing Q&A agent that people across your organization could actually use. You'll set up knowledge sources, shape how it responds, and think through the kinds of questions real employees would ask it. It's the longest lab so far because it's meant to be the capstone for this phase — proof that you can take an agent from a blank slate to something genuinely deployable. Pay attention to how much of this build reuses concepts from the three lessons before it.",
+          "This lab pulls everything from Phase 2 together into one complete build: an employee-facing Q&A agent that people across your organization could actually use. You'll set up knowledge sources, shape how it responds, and think through the kinds of questions real employees would ask it. It's the longest lab so far because it's meant to be the capstone for this phase: proof that you can take an agent from a blank slate to something genuinely deployable. Pay attention to how much of this build reuses concepts from the three lessons before it.",
         url: 'https://microsoft.github.io/mcs-labs/modules/ask-me-anything/',
       },
       {
@@ -201,7 +201,7 @@ export const curriculum = [
         type: 'checkpoint',
         title: 'Phase 2 Checkpoint',
         question:
-          'What is a "topic," what is "knowledge," and what is a "tool" — and which one would you reach for to answer an HR policy question vs. update a record?',
+          'What is a "topic," what is "knowledge," and what is a "tool," and which one would you reach for to answer an HR policy question vs. update a record?',
       },
     ],
   },
@@ -221,7 +221,7 @@ export const curriculum = [
         rows: [
           [
             'Connector',
-            'A ready-made plug for a common service (SharePoint, Outlook, Salesforce…). Pick it off a shelf of 1,400+ options — no building required.',
+            'A ready-made plug for a common service (SharePoint, Outlook, Salesforce…). Pick it off a shelf of 1,400+ options; no building required.',
           ],
           [
             'REST API',
@@ -229,15 +229,15 @@ export const curriculum = [
           ],
           [
             'MCP (Model Context Protocol)',
-            'A "universal adapter" — build or connect it once, and every agent that speaks the same standard can use it, without re-describing it each time.',
+            'A "universal adapter": build or connect it once, and every agent that speaks the same standard can use it, without re-describing it each time.',
           ],
           [
             'Prompt',
-            'A small, reusable AI instruction — e.g., "summarize this document" — that an agent can call like a tool.',
+            'A small, reusable AI instruction (e.g., "summarize this document") that an agent can call like a tool.',
           ],
           [
             'Agent Flow',
-            'A fixed, step-by-step checklist that always runs the same way — good for anything that must be done consistently, like approvals.',
+            'A fixed, step-by-step checklist that always runs the same way; good for anything that must be done consistently, like approvals.',
           ],
           [
             'Computer Use / CUA',
@@ -245,7 +245,7 @@ export const curriculum = [
           ],
           [
             'Orchestrator',
-            "The agent's \"decision-maker\" — reads the request and the agent's instructions, then chooses which tool(s) to use.",
+            "The agent's \"decision-maker\": reads the request and the agent's instructions, then chooses which tool(s) to use.",
           ],
           [
             'Topic',
@@ -264,9 +264,9 @@ export const curriculum = [
         format: 'Slides + Lab',
         time: '30 min',
         oneLiner:
-          'Demystifies connectors, REST APIs, MCP, prompts, and agent flows — the reference table you just read is the cheat sheet for this lesson.',
+          'Demystifies connectors, REST APIs, MCP, prompts, and agent flows: the reference table you just read is the cheat sheet for this lesson.',
         why:
-          "The world of ‘tools’ an agent can use is full of jargon — connectors, REST APIs, MCP, prompts, agent flows — that can sound intimidating but boils down to a handful of practical categories. This lesson walks through each type with real examples, building directly on the plain-English reference table you just read. By the end, you'll be able to look at a business requirement and immediately recognize which category of tool it calls for. This is one of the most practical lessons in the course because tool selection is a decision you'll make in nearly every agent you build.",
+          "The world of ‘tools’ an agent can use is full of jargon (connectors, REST APIs, MCP, prompts, agent flows) that can sound intimidating but boils down to a handful of practical categories. This lesson walks through each type with real examples, building directly on the plain-English reference table you just read. By the end, you'll be able to look at a business requirement and immediately recognize which category of tool it calls for. This is one of the most practical lessons in the course because tool selection is a decision you'll make in nearly every agent you build.",
         url: 'https://microsoft.github.io/mcs-labs/modules/tools-overview/',
       },
       {
@@ -278,7 +278,7 @@ export const curriculum = [
         oneLiner:
           'How agents remember things (variables) and how simple multi-agent setups/channels (Teams, web) work, at a conceptual level.',
         why:
-          "Two more concepts round out your understanding of how an agent operates: variables, which let an agent remember details across a conversation (like a name or a case number), and channels, which are the different places people can reach an agent, such as Teams or a web page. This lesson also introduces, at a conceptual level, what happens when simple multi-agent setups work together. None of this requires technical depth — the goal is just enough conceptual grounding to understand what's happening under the hood when an agent ‘remembers’ something or shows up in a new place.",
+          "Two more concepts round out your understanding of how an agent operates: variables, which let an agent remember details across a conversation (like a name or a case number), and channels, which are the different places people can reach an agent, such as Teams or a web page. This lesson also introduces, at a conceptual level, what happens when simple multi-agent setups work together. None of this requires technical depth; the goal is just enough conceptual grounding to understand what's happening under the hood when an agent ‘remembers’ something or shows up in a new place.",
         url: 'https://microsoft.github.io/mcs-labs/modules/core-concepts-part2/',
       },
       {
@@ -316,7 +316,7 @@ export const curriculum = [
         oneLiner:
           'How to keep a person in control of important decisions (e.g., expense approvals) even when an agent does the legwork.',
         why:
-          "Automation shouldn't mean losing control over decisions that matter. This lesson teaches the ‘human-in-the-loop’ pattern, where an agent does all the tedious legwork — gathering information, checking policy, drafting a recommendation — but a real person still makes the final call, like approving an expense report. This is one of the most important governance skills in the entire course, because it's what lets a business responsibly hand real work to an agent without losing oversight. You'll build an approval flow yourself and see exactly where the human checkpoint sits.",
+          "Automation shouldn't mean losing control over decisions that matter. This lesson teaches the ‘human-in-the-loop’ pattern, where an agent does all the tedious legwork (gathering information, checking policy, drafting a recommendation), but a real person still makes the final call, like approving an expense report. This is one of the most important governance skills in the entire course, because it's what lets a business responsibly hand real work to an agent without losing oversight. You'll build an approval flow yourself and see exactly where the human checkpoint sits.",
         url: 'https://microsoft.github.io/mcs-labs/modules/human-in-the-loop/',
       },
       {
@@ -345,7 +345,7 @@ export const curriculum = [
     title: 'Licensing & Governance, in Business Terms',
     week: 'Week 5',
     objective:
-      "Understand what's already paid for, what costs extra, and who sets the guardrails — without needing IT jargon.",
+      "Understand what's already paid for, what costs extra, and who sets the guardrails, without needing IT jargon.",
     lessons: [
       {
         num: 1,
@@ -367,12 +367,12 @@ export const curriculum = [
           [
             'Copilot Studio (pay-as-you-go/at scale)',
             'Building autonomous agents, agent flows, and connecting external systems (Salesforce, SAP, ServiceNow, Workday).',
-            'Consumption-based (Copilot Credits) — check current rates on Microsoft Learn',
+            'Consumption-based (Copilot Credits); check current rates on Microsoft Learn',
           ],
           [
             'Enterprise Agent Platform',
             "Multi-agent orchestration and centralized governance/monitoring across an entire organization's agents.",
-            'Enterprise licensing — IT/procurement conversation',
+            'Enterprise licensing; IT/procurement conversation',
           ],
         ],
         note: 'Source: internal licensing reference; confirm current rates on Microsoft Learn before budgeting.',
@@ -384,9 +384,9 @@ export const curriculum = [
         format: 'Slides',
         time: '30 min',
         oneLiner:
-          "What's included vs. what draws on Copilot Credits — the table you just read is the cheat sheet.",
+          "What's included vs. what draws on Copilot Credits: the table you just read is the cheat sheet.",
         why:
-          "Licensing questions come up the moment anyone tries to scale an agent beyond a personal experiment, and the terminology can be confusing even for people who work with budgets every day. This lesson walks through what's already included in a typical Microsoft 365 subscription versus what draws on consumption-based Copilot Credits, using the table you just read as your cheat sheet. By the end, you'll be able to have an informed conversation with a budget owner about what a given agent idea will actually cost. This is business literacy, not technical detail — you won't need to touch a billing console to benefit from it.",
+          "Licensing questions come up the moment anyone tries to scale an agent beyond a personal experiment, and the terminology can be confusing even for people who work with budgets every day. This lesson walks through what's already included in a typical Microsoft 365 subscription versus what draws on consumption-based Copilot Credits, using the table you just read as your cheat sheet. By the end, you'll be able to have an informed conversation with a budget owner about what a given agent idea will actually cost. This is business literacy, not technical detail; you won't need to touch a billing console to benefit from it.",
         url: 'https://microsoft.github.io/mcs-labs/modules/licensing/',
       },
       {
@@ -398,7 +398,7 @@ export const curriculum = [
         oneLiner:
           'Who can publish agents, what data they can touch, and the guardrails (DLP, security zones) that keep that safe.',
         why:
-          "Letting anyone build and publish an agent sounds empowering until you consider what happens if an agent is connected to the wrong data or shared too widely. Governance is the set of guardrails — like data loss prevention (DLP) policies and security zones — that keep agent-building safe as more people across an organization start doing it. This lesson covers who typically has permission to publish an agent, what data it's allowed to touch, and how these controls get enforced in practice. Understanding governance is what turns ‘anyone can build an agent’ from a risk into a genuine advantage.",
+          "Letting anyone build and publish an agent sounds empowering until you consider what happens if an agent is connected to the wrong data or shared too widely. Governance is the set of guardrails, like data loss prevention (DLP) policies and security zones, that keep agent-building safe as more people across an organization start doing it. This lesson covers who typically has permission to publish an agent, what data it's allowed to touch, and how these controls get enforced in practice. Understanding governance is what turns ‘anyone can build an agent’ from a risk into a genuine advantage.",
         url: 'https://microsoft.github.io/mcs-labs/modules/governance/',
       },
       {
@@ -406,7 +406,7 @@ export const curriculum = [
         type: 'checkpoint',
         title: 'Phase 5 Checkpoint',
         question:
-          'If you build a custom agent that calls an external system daily, which cost model applies — included, or Copilot Credits?',
+          'If you build a custom agent that calls an external system daily, which cost model applies: included, or Copilot Credits?',
       },
     ],
   },
@@ -415,7 +415,7 @@ export const curriculum = [
     title: "Proving It's Working",
     week: 'Week 6',
     objective:
-      "Close the loop — learn to read an agent's analytics and decide whether to keep, tune, or retire it.",
+      "Close the loop: learn to read an agent's analytics and decide whether to keep, tune, or retire it.",
     lessons: [
       {
         num: 1,
@@ -425,7 +425,7 @@ export const curriculum = [
         time: '30 min',
         oneLiner: "How to tell whether an agent is actually working well, using built-in analytics.",
         why:
-          "Building an agent is only half the job — the other half is knowing whether it's actually working. This lesson introduces the built-in analytics every agent generates: how often it's used, how often it resolves a request without help, and where conversations tend to break down. You'll learn to read these numbers as a story about the agent's real-world performance, not just a dashboard of numbers. This sets up the deeper analytics work in the next lesson.",
+          "Building an agent is only half the job; the other half is knowing whether it's actually working. This lesson introduces the built-in analytics every agent generates: how often it's used, how often it resolves a request without help, and where conversations tend to break down. You'll learn to read these numbers as a story about the agent's real-world performance, not just a dashboard of numbers. This sets up the deeper analytics work in the next lesson.",
         url: 'https://microsoft.github.io/mcs-labs/modules/core-concepts-part3/',
       },
       {
@@ -436,7 +436,7 @@ export const curriculum = [
         time: '60 min',
         oneLiner: 'A deeper, hands-on pass at reading agent analytics and turning them into improvements.',
         why:
-          "This lab takes the analytics concepts from the last lesson and puts them into practice: you'll dig into real usage data, spot patterns that indicate a problem, and translate those patterns into specific improvements. This is the skill that separates someone who built an agent from someone who runs one well — the willingness to keep tuning based on evidence rather than assuming it's done. It's also the longest lesson in the course because turning data into action takes real practice, not just a quick read of a chart. By the end, you'll have a repeatable process for deciding whether to keep, tune, or retire any agent you build.",
+          "This lab takes the analytics concepts from the last lesson and puts them into practice: you'll dig into real usage data, spot patterns that indicate a problem, and translate those patterns into specific improvements. This is the skill that separates someone who built an agent from someone who runs one well: the willingness to keep tuning based on evidence rather than assuming it's done. It's also the longest lesson in the course because turning data into action takes real practice, not just a quick read of a chart. By the end, you'll have a repeatable process for deciding whether to keep, tune, or retire any agent you build.",
         url: 'https://microsoft.github.io/mcs-labs/modules/measure-success/',
       },
       {
@@ -549,7 +549,7 @@ export const appendixItems = [
 ]
 
 // ---------------------------------------------------------------------------
-// Navigation helpers — flatten the curriculum into a single ordered list so
+// Navigation helpers: flatten the curriculum into a single ordered list so
 // Back/Continue and the progress bar can work off one linear sequence.
 // ---------------------------------------------------------------------------
 

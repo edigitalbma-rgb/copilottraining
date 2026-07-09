@@ -10,11 +10,11 @@ export default function AppendixList() {
     <div className="mx-auto max-w-3xl px-6 py-8 md:py-12 animate-fadeIn">
       <p className="text-sm font-semibold text-accent-dark">Appendix</p>
       <h1 className="mt-2 text-2xl md:text-3xl font-bold text-navy leading-tight">
-        Advanced Topics — Awareness Only
+        Advanced Topics: Awareness Only
       </h1>
       <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
         These modules go deeper than a non-technical curriculum needs to. You don't need to work
-        through them lesson-by-lesson — this page is just a reference list so you know they exist
+        through them lesson-by-lesson; this page is just a reference list so you know they exist
         and roughly what each one covers, in case you ever need to hand a task to a more technical
         teammate.
       </p>

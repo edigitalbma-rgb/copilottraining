@@ -2,7 +2,7 @@ export default function ReferenceTableLesson({ lesson }) {
   return (
     <div className="space-y-4">
       <p className="text-sm text-slate-500">
-        Read-only reference — no completion gate. Use Continue when you're ready to move on.
+        Read-only reference; no completion gate. Use Continue when you're ready to move on.
       </p>
       <div className="overflow-x-auto rounded-xl border border-slate-200">
         <table className="w-full text-left text-sm">

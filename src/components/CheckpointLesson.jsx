@@ -27,7 +27,7 @@ export default function CheckpointLesson({ lesson, savedAnswer, onSaveAnswer }) 
           value={draft}
           onChange={handleChange}
           rows={6}
-          placeholder="Type your reflection here — it's saved automatically as you write."
+          placeholder="Type your reflection here; it's saved automatically as you write."
           className="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm leading-relaxed text-slate-800 focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/20"
         />
         <p className="mt-2 text-xs text-slate-400">

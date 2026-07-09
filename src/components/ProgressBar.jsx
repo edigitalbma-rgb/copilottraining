@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useProgress } from '../context/ProgressContext'
 
 export default function ProgressBar({ onToggleSidebar }) {
@@ -15,6 +16,22 @@ export default function ProgressBar({ onToggleSidebar }) {
             <path d="M2.5 5h15M2.5 10h15M2.5 15h15" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
           </svg>
         </button>
+        <Link
+          to="/"
+          className="flex items-center gap-1.5 shrink-0 rounded-md px-2 h-9 text-sm font-semibold text-navy hover:bg-slate-100 transition-colors"
+          aria-label="Back to course home"
+        >
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+            <path
+              d="M3 9.5 10 3l7 6.5M4.5 8v8h11V8"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <span className="hidden sm:inline">Home</span>
+        </Link>
         <div className="flex-1">
           <div className="h-1.5 w-full rounded-full bg-slate-200 overflow-hidden">
             <div

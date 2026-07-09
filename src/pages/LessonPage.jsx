@@ -30,7 +30,7 @@ export default function LessonPage() {
 
   const { lesson, phase } = nav.notFound ? {} : nav
 
-  // Reference lessons carry no completion gate — treat them as complete
+  // Reference lessons carry no completion gate; treat them as complete
   // the moment they're viewed so they count toward overall progress.
   useEffect(() => {
     if (!nav.notFound && lesson.type === 'reference' && !isCompleted(phase.id, lesson.num)) {
