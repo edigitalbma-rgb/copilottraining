@@ -100,6 +100,16 @@ export default function Sidebar({ isOpen, onClose }) {
             </NavLink>
           </div>
         </nav>
+
+        <div className="px-5 py-4">
+          <Link
+            to="/privacy"
+            onClick={onClose}
+            className="text-xs text-white/40 hover:text-white/70 transition-colors"
+          >
+            Privacy Notice
+          </Link>
+        </div>
       </aside>
     </>
   )

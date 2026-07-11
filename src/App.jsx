@@ -3,6 +3,7 @@ import CourseLayout from './components/CourseLayout'
 import WelcomeScreen from './components/WelcomeScreen'
 import CompletionScreen from './components/CompletionScreen'
 import AppendixList from './components/AppendixList'
+import PrivacyNotice from './components/PrivacyNotice'
 import LessonPage from './pages/LessonPage'
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<WelcomeScreen />} />
       <Route path="/complete" element={<CompletionScreen />} />
+      <Route path="/privacy" element={<PrivacyNotice />} />
       <Route element={<CourseLayout />}>
         <Route path="/:phaseSeg/:lessonSeg" element={<LessonPage />} />
         <Route path="/appendix" element={<AppendixList />} />

@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { welcomeContent } from '../data/curriculum'
 import { useProgress } from '../context/ProgressContext'
 
@@ -64,6 +64,13 @@ export default function WelcomeScreen() {
             </button>
           )}
         </div>
+
+        <Link
+          to="/privacy"
+          className="mt-16 inline-block text-xs text-white/40 hover:text-white/70 transition-colors"
+        >
+          Privacy Notice
+        </Link>
       </div>
     </div>
   )

@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { completionContent } from '../data/curriculum'
 
 export default function CompletionScreen() {
@@ -38,6 +38,13 @@ export default function CompletionScreen() {
             Revisit the curriculum
           </button>
         </div>
+
+        <Link
+          to="/privacy"
+          className="mt-16 inline-block text-xs text-white/40 hover:text-white/70 transition-colors"
+        >
+          Privacy Notice
+        </Link>
       </div>
     </div>
   )
